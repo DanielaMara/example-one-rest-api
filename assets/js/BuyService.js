@@ -16,7 +16,6 @@ var BuyService = {
 			{
 				console.log('Cheguei até aqui!!!! :D');
 				callback(result);
-				
 			},
 			error: function () 
 			{

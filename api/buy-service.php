@@ -1,12 +1,11 @@
 
 <?php 
-    $rice = $_GET['rice'];
-    $rice = floatval(($rice));
-    $bean = $_GET['bean'];
-    $chocolate = $_GET['chocolate'];
-    $psn = $_GET['psn'];
+    $rice = $_POST['rice'];
+    $bean = floatval($_POST['bean']);
+    $chocolate = floatval($_POST['chocolate']);
+    $psn = floatval($_POST['psn']);
     
-    $soma = 0.0;
+    $soma = 0;
     
     if(is_numeric($rice) && is_numeric($bean) && is_numeric($chocolate) && is_numeric($psn))
     {
