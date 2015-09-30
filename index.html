@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise One</title>
+        <link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
+    </head>
+    <body>
+        <div class="content">
+            <h1>Shopping Cart</h1>
+            <div>
+                <form>
+                    <div class="description-item">
+                        <input type="checkbox" id="rice" name="rice" value="1.00" />
+                        <input type="checkbox" id="bean" name="bean" value="12.00" />
+                        <input type="checkbox" id="chocolate" name="chocolate" value="0.50" />
+                        <input type="checkbox" id="psn" name="psn" value="100.00" />
+                    </div>
+                    <div class="value-item">
+                        <label for="rice">R$ 1,00</label>
+                        <label for="bean">R$ 12,00</label>
+                        <label for="chocolate">R$ 0,50</label>
+                        <label for="psn">R$ 100,00</label>
+                    </div>
+                    <input type="submit" value="Buy"/>
+                </form>
+            </div>
+        </div>
+        <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="assets/js/BuyController.js"></script>
+        <script type="text/javascript" src="assets/js/BuyService.js"></script>
+    </body>
+</html>
