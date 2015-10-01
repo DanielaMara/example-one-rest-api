@@ -1,9 +1,13 @@
-
 <?php 
-    $rice = $_POST['rice'];
-    $bean = floatval($_POST['bean']);
-    $chocolate = floatval($_POST['chocolate']);
-    $psn = floatval($_POST['psn']);
+    /*$request = http_build_query($_POST);
+    $size = strlen($request);*/
+
+    $rice = floatval($_REQUEST['rice']);
+    $bean = floatval($_REQUEST['bean']);
+    $chocolate = floatval($_REQUEST['chocolate']);
+    $psn = floatval($_REQUEST['psn']);
+    
+    $teste = $_REQUEST['teste'];
     
     $soma = 0;
     
@@ -12,5 +16,5 @@
         $soma = $rice + $bean + $chocolate + $psn;
     }
     
-    echo $rice;
+    echo $teste;
 ?>

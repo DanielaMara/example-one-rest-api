@@ -3,7 +3,9 @@ var BuyService = {
     
     sendInformation: function (callback) 
     {
+    	debugger;
         var dadosForm = $("form").serialize();
+        alert(dadosForm);
         
 		$.ajax({
 			type: 'POST',
@@ -15,7 +17,7 @@ var BuyService = {
 			success: function (result) 
 			{
 				console.log('Cheguei até aqui!!!! :D');
-				callback(result);
+				callback(result.teste);
 			},
 			error: function () 
 			{
